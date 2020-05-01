@@ -1,7 +1,3 @@
-//Omer David
-//ID: 308483437
-//Project: Snake. 
-
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
@@ -10,7 +6,7 @@
 
 // terminal escape codes/ANSI escape codes (or ANSI escape sequences)
 // "\x1B" is the escape character that tells your terminal that what comes next is not meant to be printed on the screen, 
-// but rather a command to the terminal (or most likely terminal emulatoion).
+// but rather a command to the terminal (or most likely terminal emulation).
 
 //--------------------------------STRUCTS-----------------------------------------
 
@@ -34,8 +30,8 @@ void init(void);
 
 // Moves the cursor to position (x,y) on screen.
 // Parameters:
-//     x: the row of the posiiton.
-//     y: the column of the posiiton.
+//     x: the row of the position.
+//     y: the column of the position.
 void gotoxy(int x, int y);
 
 // Delays the execution of the program.
@@ -46,7 +42,7 @@ void sleep(float secs);
 //This function prints the board.
 void printBoard();
 
-//This function initialized the fisrt cell of the linked list
+//This function initialized the first cell of the linked list
 snake* initSnake();
 
 //This function initialized the direction of the snake. 
@@ -66,7 +62,7 @@ void updateSnake(snake* snake);
 void clearSnake(snake* node);
 
 // This function adds a new node to the tail of the linked list, 
-//and positioning it acoording to the direction of the snake. 
+//and positioning it according to the direction of the snake. 
 void addNewNode(snake* snake);
 
 //This function checks if the game is over. 
@@ -146,8 +142,8 @@ void init(void) {
 
 // Moves the cursor to position (x,y) on screen.
 // Parameters:
-//     x: the row of the posiiton.
-//     y: the column of the posiiton.
+//     x: the row of the position.
+//     y: the column of the position.
 void gotoxy(int x, int y) {
 	printf("\x1b[%d;%df", x, y);
 }
@@ -183,7 +179,7 @@ void printBoard()
 	}
 }
 
-//This function initialized the fisrt cell of the linked list
+//This function initialized the first cell of the linked list
 snake* initSnake()
 {
 	snake* headOfSnake;
@@ -247,7 +243,7 @@ void clearSnake(snake* node)
 }
 
 // This function adds a new node to the tail of the linked list, 
-//and positioning it acoording to the direction of the snake. 
+//and positioning it according to the direction of the snake. 
 void addNewNode(snake* snake)
 { 
 	listNode* tail = snake->snakeHead;
