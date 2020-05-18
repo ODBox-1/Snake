@@ -1,16 +1,23 @@
 # Snake
+
 This is my first year project of my BS.C's degree in Computer Science. 
 
-Game Rules:
+### Game Rules
  
-By pressing: a - go left
-	     d - go right 
-	     s - go down
-	     w - go up
+1. Move around the board by pressing: 
+* `a` - in order to go **left**
+* `d` - in order to go **right** 
+* `s` - in order to go **down**
+* `w` - in order to go **up**
 
-You need to avoid touching the edges of the board.
-The snake speed increases as the game runs. 
+2. You need to avoid touching the edges of the board.
 
-Disqualification:
-1. Hitting the edges. 
-2. Hitting the snake body. 
+3. The snake speed increases as the game runs. 
+
+4. You get disqualified by:
+* Hitting the edges
+* Hitting the snake body
+
+### Start Playing
+
+* by double clicking `Snake.exe` file (supported by Windows operating system only)
